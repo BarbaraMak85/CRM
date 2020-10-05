@@ -1,0 +1,108 @@
+        body {
+            margin: 0;
+        }
+        
+        @media (max-width: 800px) {
+            .component--menu .component--menu--list {
+                display: none;
+            }
+            .responsive-menu {
+                position: fixed;
+                width: 300px;
+                height: calc(100% - 81px);
+                top: 81px;
+                left: 0;
+                background: #000;
+                display: none;
+            }
+            .component--menu {
+                display: grid;
+                grid-template-columns: 45% 65%;
+            }
+            .logo-wrapper {
+                text-align: center;
+            }
+            .logo-wrapper .image-menu {
+                margin: 0;
+            }
+            .toggle-menu-btn {
+                display: inline;
+            }
+            .section--about-me {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .text-about-me {
+                padding-right: 0px;
+            }
+            .component--about-me {
+                display: grid;
+                grid-template-columns: 100%;
+                justify-items: center;
+                margin-bottom: 30px;
+            }
+            .component--about-me-photo {
+                display: grid;
+                grid-template-columns: 100%;
+                justify-items: center;
+            }
+            .button-about-me {
+                margin-right: 10px;
+            }
+            .component--technology {
+                display: grid;
+                grid-template-columns: 33% 33%;
+                width: 100%;
+                .technology {
+                    width: 100%;
+                }
+            }
+            .component-portfolio {
+                display: grid;
+                -ms-grid-columns: 50% 50%;
+                grid-template-columns: 100%;
+            }
+            .component--contact {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .component--contact .component--contact-data {
+                display: grid;
+                -ms-grid-columns: 30% 30%;
+                grid-template-columns: 100%;
+                -ms-flex-pack: center;
+                justify-content: center;
+                width: 100%;
+            }
+            .component--contact .component--contact-name {
+                display: grid;
+                justify-content: center;
+            }
+            .component--contact .component--contact-topic,
+            .component--contact .component--contact--content {
+                display: grid;
+                grid-template-columns: 40%;
+            }
+            .component--contact-checkbox {
+                display: -ms-grid;
+                display: grid;
+                grid-template-columns: 40%;
+                justify-content: center;
+            }
+            label {
+                text-align: justify;
+            }
+            .contact-button {
+                width: 238px;
+            }
+            .component--contact .contact-input {
+                display: grid;
+                width: 85%;
+            }
+            .components--banner--pafagraph {
+                font-size: 40px;
+            }
+            .components--banner--name {
+                font-size: 20px;
+            }
+        }
