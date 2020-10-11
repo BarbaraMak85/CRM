@@ -69,7 +69,7 @@
     <section id="orders" class="section_panel" style="display: none;">
         <select id="order_customers_list"></select>
         <select id="order_products_list"></select>
-        <input id="number_order" type="number" placeholder="Wprowadź ilość sztuk">
+        <input class="order" id="number_order" type="number" placeholder="Wprowadź ilość sztuk">
         <button id="quantity_number">Dodaj zamówienie</button>
         <ul id="ordersList">
 
@@ -77,11 +77,11 @@
     </section>
 
 
-    <section id="products" class="section_panel" style="display: none;">
+    <section id="products" class="section_panel section_green" style="display: none;">
         <div id="product_errors"></div>
         <input data-products="products" type="text" name="product_name" placeholder="wprowadź nazwę towaru">
         <input data-products="products" type="text" name="quantity_product" placeholder="wprowadź ilość sztuk">
-        <input data-products="products" type="text" name="barcode_name" placeholder="wprowadź kod towaru">products
+        <input data-products="products" type="text" name="barcode_name" placeholder="wprowadź kod towaru">
         <button id="button-add-products">dodaj zamówienie</button>
         <ul id="productsList">
 

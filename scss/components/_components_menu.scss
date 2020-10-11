@@ -138,14 +138,31 @@ p {
 
 .section_panel {
     display: grid;
-    grid-template-rows: 100%;
+    grid-template-columns: 80%;
     justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.section_green {
+    display: grid;
+    grid-template-columns: 75%;
+    margin-left: -38px;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#button-add-products {
+    height: 55px;
+    background-color: #8fbc8f;
+    font-size: 22px;
+    color: #ffffff;
+    border: none;
     font-family: "Roboto", sans-serif;
 }
 
 form {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
     justify-content: center;
     font-family: "Roboto", sans-serif;
 }
@@ -162,6 +179,43 @@ form {
     color: #9575cd;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
+}
+
+.section_green input {
+    height: 50px;
+    background-color: #ffffff;
+    border: solid 1px #8fbc8f;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    color: #8fbc8f;
+}
+
+.section_green input::placeholder {
+    color: #8fbc8f;
+}
+
+#order_customers_list,
+#order_products_list,
+#number_order {
+    height: 50px;
+    background-color: #ffffff;
+    border: solid 1px #e47833;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    color: #e47833;
+}
+
+.order input::placeholder {
+    color: #e47833;
+}
+
+#quantity_number {
+    background-color: #e47833;
+    font-size: 22px;
+    color: #ffffff;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    height: 55px;
 }
 
 textarea {
@@ -203,7 +257,28 @@ textarea::placeholder {
     justify-content: center;
     font-family: "Roboto", sans-serif;
     padding-left: 0px;
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
+}
+
+#ordersList {
+    display: grid;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    padding-left: 0px;
+    grid-template-columns: 100%;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 80%;
+    background-color: #ffffff;
+    height: 40px;
+    border: 1px solid #e47833;
+    padding: 10px;
+    box-shadow: 2px 5px 8px 2px #e47833;
+    color: #777;
+    font-family: "Roboto", sans-serif;
 }
 
 .customer_list {
@@ -227,6 +302,46 @@ ul button {
     border: none;
     height: 40px;
     background-color: #9575cd;
+    outline: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+#productsList {
+    display: grid;
+    -ms-flex-pack: center;
+    grid-template-columns: 100%;
+    margin-left: -20px;
+}
+
+ul#productsList {
+    grid-template-columns: 100%;
+    margin-left: -38px;
+}
+
+.product_li {
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    grid-template-rows: 80%;
+    background-color: #ffffff;
+    height: 40px;
+    border: 1px solid #8fbc8f;
+    padding: 10px;
+    box-shadow: 2px 5px 8px 2px #8fbc8f;
+    color: #777;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+}
+
+.btn_delete,
+.btn_edit {
+    width: 100px;
+    margin-left: 8px;
+    border: 5%;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    background-color: #8fbc8f;
     outline: none;
     color: #ffffff;
     font-family: "Roboto", sans-serif;

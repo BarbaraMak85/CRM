@@ -15,7 +15,7 @@ function showCategory() {
 
     btnBack.style.display = "block";
 
-    document.querySelector(`#${this.dataset.view}`).style.display = "block";
+    document.querySelector(`#${this.dataset.view}`).style.display = "grid";
 }
 
 const customerChoice = document.querySelector('select[name="customer_type"]');
