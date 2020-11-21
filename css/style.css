@@ -1611,7 +1611,7 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    width: 40px;
+    width: 100px;
     -ms-flex-align: center;
         align-items: center;
     height: 30px;
