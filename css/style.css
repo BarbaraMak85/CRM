@@ -1422,7 +1422,7 @@ body {
   .btn_delete,
   .btn_edit {
     font-size: 12px;
-    width: 55px;
+    width: 45px;
     height: 25px;
   }
   ul#productsList .btn_delete,
@@ -1554,10 +1554,14 @@ body {
     display: grid;
     -ms-grid-columns: 14% 14% 14%;
         grid-template-columns: 14% 14% 14%;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 320px) {
+  .nav {
+    margin-bottom: 30px;
+  }
   .container {
     grid-template: none;
     -ms-grid-columns: 70%;
