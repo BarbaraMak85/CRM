@@ -2,99 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
 
 <body>
-
     <div class="nav">
         <p class="violet" data-view="customers">C</p>
         <p class="yellow" data-view="orders">R</p>
         <p class="green" data-view="products">M</p>
     </div>
 
-
-
     <div id="box" class="container">
         <div class="box with-violet" data-view="customers">
-            <button class="violet">KLIENCI </button>
+            <button class="violet">KLIENCI</button>
             <div class="icons"><i class="fas fa-users"></i></i>
-
             </div>
 
         </div>
 
         <div class="box with-yellow" data-view="orders">
             <button class="yellow">ZAMÓWIENIA</button>
-            <div class="icons"> <i class="fas fa-chart-line"></i></div>
+            <div class="icons"><i class="fas fa-chart-line"></i></div>
         </div>
 
         <div class="box with-green" data-view="products">
             <button class="green">PRODUKTY</button>
             <div class="icons"><i class="fas fa-shopping-basket"></i></div>
         </div>
-
-
     </div>
 
-
-    <section id="customers" class="section_panel" style="display: none;">
+    <section id="customers" class="section_panel" style="display: none">
         <div id="customer_errors"></div>
         <form id="create_customer">
             <select class="select_form" name="customer_type">
-                <option value="human">Osoba fizyczna</option>
-                <option value="company">Firma</option>
-            </select>
-            <input data-customer-type="human" type="text" name="customer_name" placeholder="Wprowadź imię">
-            <input data-customer-type="human" type="text" name="customer_lastname" placeholder="Wprowadź nazwisko">
-            <input data-customer-type="company" type="text" name="customer_company" style="display: none;" placeholder="wprowadź nazwe firmy">
-            <input type="text" name="customers_adres" placeholder="Wprowadź adres">
-            <input data-customer-type="company" type="text" name="customer_nip" style="display: none;" placeholder="Wprowadź numer NIP">
+          <option value="human">Osoba fizyczna</option>
+          <option value="company">Firma</option>
+        </select>
+            <input data-customer-type="human" type="text" name="customer_name" placeholder="Wprowadź imię" />
+            <input data-customer-type="human" type="text" name="customer_lastname" placeholder="Wprowadź nazwisko" />
+            <input data-customer-type="company" type="text" name="customer_company" style="display: none" placeholder="wprowadź nazwe firmy" />
+            <input type="text" name="customers_adres" placeholder="Wprowadź adres" />
+            <input data-customer-type="company" type="text" name="customer_nip" style="display: none" placeholder="Wprowadź numer NIP" />
             <textarea name="adition_info" placeholder="Dodatkowe informacje"></textarea>
-            <button class="btn_customers" id="button-add-customer">Dodaj dane</button>
-
+            <button class="btn_customers" id="button-add-customer">
+          Dodaj dane
+        </button>
         </form>
 
-
-        <ul class="customers-ul" id="customersList">
-
-        </ul>
-
+        <ul class="customers-ul" id="customersList"></ul>
     </section>
-    <section id="orders" class="section_panel" style="display: none;">
+    <section id="orders" class="section_panel" style="display: none">
         <select id="order_customers_list"></select>
         <select id="order_products_list"></select>
-        <input class="order" id="number_order" type="number" placeholder="Wprowadź ilość sztuk">
+        <input class="order" id="number_order" type="number" placeholder="Wprowadź ilość sztuk" />
         <button id="quantity_number">Dodaj zamówienie</button>
-        <ul id="ordersList">
-
-        </ul>
+        <ul id="ordersList"></ul>
     </section>
 
-
-    <section id="products" class="section_panel section_green" style="display: none;">
+    <section id="products" class="section_panel section_green" style="display: none">
         <div id="product_errors"></div>
-        <input data-products="products" type="text" name="product_name" placeholder="wprowadź nazwę towaru">
-        <input data-products="products" type="text" name="quantity_product" placeholder="wprowadź ilość sztuk">
-        <input data-products="products" type="text" name="barcode_name" placeholder="wprowadź kod towaru">
+        <input data-products="products" type="text" name="product_name" placeholder="wprowadź nazwę towaru" />
+        <input data-products="products" type="text" name="quantity_product" placeholder="wprowadź ilość sztuk" />
+        <input data-products="products" type="text" name="barcode_name" placeholder="wprowadź kod towaru" />
         <button id="button-add-products">dodaj zamówienie</button>
-        <ul id="productsList">
-
-        </ul>
-
-
+        <ul id="productsList"></ul>
     </section>
     <div class="btn">
-        <button class="btnBack" id="btnBack" style="display: none;">Wróć</button>
+        <button class="btnBack" id="btnBack" style="display: none">Wróć</button>
     </div>
 
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
